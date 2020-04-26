@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background-color: #5dade2;
+}
+
+
+h2 {
+  text-align: center;
+}
+
+.form-control:focus {
+  border-left-color: black;
+  border-right-color: black;
+  box-shadow: none;
+}
+
+label {
+  font-size: 20px;
+}
+
+.btn {
+  margin-top: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  transition: 0.7s;
+  font-size: 20px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+}
+
+.btn:hover {
+  color: green;
+  background-color: #fff;
+}
+
+select,
+input {
+  border-radius: 20px !important;
+}
+
+.btn,
+label,
+option {
+  color: black;
+}
+
+table.table-bordered {
+  border: 4px solid white;
+  margin-top: 20px;
+}
+
+table.table-bordered>thead>tr>th {
+  border: 2px solid white;
+}
+
+table.table-bordered>tbody>tr>td {
+  text-align: center;
+  border: 2px solid white;
+}
+
+a {
+  color: #fff !important;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.card {
+  display: none;
+  color: black;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+p {
+  font-size: 22px;
+}
+
+.card span {
+  font-size: 26px;
+  color: red
+}
+
+.red {
+  background-color: red;
+  color: #fff;
+}
+
+.green {
+  background-color: green;
+  color: #fff
+}
+
+
+
+/* .totalPrice {
+  font-size: 20px;
+  margin-left: 420px;
+} */

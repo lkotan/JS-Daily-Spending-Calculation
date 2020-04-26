@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+  <title>LocalStorage</title>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h2></h2>
+    <div class="row">
+      <div class="col-md-4">
+        <form>
+          <div class="form-group">
+            <label for="name">Ürün Adı</label>
+            <input type="text" class="form-control" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="price">Ürün Fiyatı</label>
+            <input type="text" class="form-control" id="price" />
+          </div>
+          <div class="form-group">
+            <label for="count">Ürün Adeti</label>
+            <input type="text" class="form-control" id="count" />
+          </div>
+          <div class="form-group">
+            <label>Masraf Türü</label>
+            <select class="form-control" id="selectCost">
+              <option disabled selected>Lütfen Masraf Türü Seçiniz</option>
+              <option value="Alış Veriş">Alış Veriş</option>
+              <option value="Market">Market</option>
+              <option value="Bireysel">Bireysel</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-success">Kaydet</button>
+        </form>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-7">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Ad</th>
+              <th scope="col">Fiyat</th>
+              <th scope="col">Adet</th>
+              <th scope="col">Toplam Tutar</th>
+              <th scope="col">Masraf Türü</th>
+              <th scope="col">Sil</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div class="form-group mt-5">
+          <p class="text-center">Günlük Harcama Tutarı İçin Masraf Türü
+            Seçiniz</p>
+          <select class="form-control" id="calculateTotalCost">
+            <option disabled selected>Lütfen Masraf Türü Seçiniz</option>
+            <option value="Alış Veriş">Alış Veriş</option>
+            <option value="Market">Market</option>
+            <option value="Bireysel">Bireysel</option>
+          </select>
+        </div>
+        <div class="card mb-5">
+          <div class="card-body">
+            <div class="card-title">
+              <p class="costsValue"></p>
+            </div>
+            <div class="card-text">
+              <p class="costsAmount"></p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="totalPrice">40 TL</div> -->
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
